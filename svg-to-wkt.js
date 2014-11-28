@@ -8,9 +8,6 @@
  */
 
 
-(function() {
-
-
   var SVGNS = 'http://www.w3.org/2000/svg';
   var SVGtoWKT = {};
 
@@ -391,9 +388,5 @@
     var root = Math.pow(10, SVGtoWKT.PRECISION);
     return Math.round(val * root) / root;
   };
-
-
-  this.SVGtoWKT = SVGtoWKT;
-
-
-}.call(this));
+  
+module.exports = SVGtoWKT;
